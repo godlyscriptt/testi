@@ -1,5 +1,5 @@
 getgenv().standList =  {
-    ["The World"] = true
+    ["Gold Experience"] = true
 }
 getgenv().waitUntilCollect = 0.7 --Change this if ur getting kicked a lot
 getgenv().sortOrder = "Asc" --desc for less players, asc for more
