@@ -1,4 +1,4 @@
-getgenv().IgnoreQuest = false
+
 --[[
 FIRST SOURCE SO ITS ASS
 
@@ -156,12 +156,9 @@ while repeatCount < 9e9 do
             break
         end
     end
-
-    if not getgenv().IgnoreQuest then
         for i = 1,7 do
             RemoteEvent:FireServer("EndDialogue", "Heaven Ascension Dio Quest", "Dialogue5", "Option1")
         end
-    end
 
     if Quest then
         killNPC("Heaven Ascension Dio", 35, false)
