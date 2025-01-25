@@ -1,7 +1,9 @@
+getgenv().IgnoreQuest = false
 --[[
 FIRST SOURCE SO ITS ASS
 
 ]]
+
 
 repeat task.wait() until game:IsLoaded() and game.Players.LocalPlayer and game.Players.LocalPlayer.Character and game.Players.LocalPlayer.Character:FindFirstChild("RemoteEvent")
 
