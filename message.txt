@@ -157,7 +157,7 @@ while repeatCount < 9e9 do
         end
     end
         for i = 1,7 do
-            RemoteEvent:FireServer("EndDialogue", "Heaven Ascension Dio Quest", "Dialogue5", "Option1")
+            RemoteEvent:FireServer("EndDialogue", "Heaven Ascension Dio Quest", "Dialogue6", "Option1")
         end
 
     if Quest then
