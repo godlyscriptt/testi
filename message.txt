@@ -150,13 +150,7 @@ while repeatCount < 9e9 do
     local Quest = nil
     local children = PlayerGui.HUD.Main.Frames.Quest:FindFirstChild("Quests"):GetChildren()
 
-    for _, child in ipairs(children) do
-        if string.find(child.Name, "Dio") then
-            Quest = child
-            break
-        end
-    end
-        for i = 1,7 do
+     	for i = 1,7 do
             RemoteEvent:FireServer("EndDialogue", "Heaven Ascension Dio Quest", "Dialogue6", "Option1")
         end
 
