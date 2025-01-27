@@ -1,9 +1,8 @@
-
+getgenv().IgnoreQuest = false
 --[[
 FIRST SOURCE SO ITS ASS
 
 ]]
-
 
 repeat task.wait() until game:IsLoaded() and game.Players.LocalPlayer and game.Players.LocalPlayer.Character and game.Players.LocalPlayer.Character:FindFirstChild("RemoteEvent")
 
@@ -150,9 +149,18 @@ while repeatCount < 9e9 do
     local Quest = nil
     local children = PlayerGui.HUD.Main.Frames.Quest:FindFirstChild("Quests"):GetChildren()
 
-     	for i = 1,7 do
+    for _, child in ipairs(children) do
+        if string.find(child.Name, "Dio") then
+            Quest = child
+            break
+        end
+    end
+getgenv().IgnoreQuest = false
+    if not getgenv().IgnoreQuest then
+        for i = 1,7 do
             RemoteEvent:FireServer("EndDialogue", "Heaven Ascension Dio Quest", "Dialogue6", "Option1")
         end
+    end
 
     if Quest then
         killNPC("Heaven Ascension Dio", 35, false)
