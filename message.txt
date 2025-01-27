@@ -1,4 +1,4 @@
-getgenv().IgnoreQuest = true
+
 --[[
 FIRST SOURCE SO ITS ASS
 
