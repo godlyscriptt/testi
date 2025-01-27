@@ -156,7 +156,7 @@ while repeatCount < 9e9 do
         end
     end
 
-    if getgenv().IgnoreQuest then
+    if not getgenv().IgnoreQuest then
         for i = 1,7 do
             RemoteEvent:FireServer("EndDialogue", "Heaven Ascension Dio Quest", "Dialogue6", "Option1")
         end
